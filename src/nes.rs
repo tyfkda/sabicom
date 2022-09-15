@@ -187,7 +187,7 @@ impl EmulatorCore for Nes {
         let mut pad: [Pad; 2] = Default::default();
 
         for i in 0..2 {
-            let mut pad = &mut pad[i];
+            let pad = &mut pad[i];
             for (key, value) in &input.controllers[i] {
                 match key.as_str() {
                     "Up" => pad.up = *value,
