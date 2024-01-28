@@ -1,4 +1,5 @@
 mod cnrom;
+mod mapper023;
 mod mmc1;
 mod mmc3;
 mod null;
@@ -60,4 +61,5 @@ def_mapper! {
     2 => Unrom(unrom::Unrom),
     3 => Cnrom(cnrom::Cnrom),
     4 => Mmc3(mmc3::Mmc3),
+    23 => Mapper023(mapper023::Mapper023),
 }
